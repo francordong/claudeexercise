@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Blog</title>
+  <meta name="description" content="Un blog personal hecho con HTML, CSS y JavaScript.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Mi Blog</a>
+      <nav>
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="about.html">Sobre mí</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Hola, bienvenido a mi blog</h1>
+      <p>Notas, ideas y cosas que voy aprendiendo.</p>
+    </section>
+
+    <div class="toolbar">
+      <input type="search" id="search" placeholder="Buscar artículos…" aria-label="Buscar artículos">
+      <div id="tags" class="tags" role="group" aria-label="Filtrar por etiqueta"></div>
+    </div>
+
+    <section id="post-list" class="post-list" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Mi Blog</div>
+  </footer>
+
+  <script src="js/posts.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
