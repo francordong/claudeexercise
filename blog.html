@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Blog de dermatología · Dra. Clara Montes</title>
+  <meta name="description" content="Artículos de dermatología escritos por una especialista: lunares, protección solar, acné, dermatitis atópica y caída del cabello.">
+</head>
+<body data-page="blog">
+  <header id="site-header"></header>
+
+  <main class="container">
+    <section class="page-head">
+      <span class="eyebrow">Blog de dermatología</span>
+      <h1>Tu piel, explicada por una especialista</h1>
+      <p>Artículos rigurosos y fáciles de entender para cuidar tu piel, tu pelo y tus uñas.</p>
+    </section>
+
+    <div class="toolbar">
+      <input type="search" id="search" placeholder="Buscar: lunares, acné, sol…" aria-label="Buscar artículos">
+      <div id="tags" class="tags" role="group" aria-label="Filtrar por categoría"></div>
+    </div>
+
+    <section id="post-list" class="post-list" aria-live="polite"></section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="js/config.js"></script>
+  <script src="js/posts.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
